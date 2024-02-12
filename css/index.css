@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 750px;
+    width: auto;
+    border: 1px solid red;
+}
+.invitation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid green;
+}
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (max-width: 768px) {
+    .button {
+        flex-direction: column;
+    }    
+}
+
+button {
+    padding: 15px 30px;
+    color: white;
+    font-weight: 900;
+    letter-spacing: 2px;
+    border-radius: 10px;
+    
+}
+.yes {
+    background-color: rgb(1,99,25);
+}
+.no {
+    background-color: rgb(183, 22, 22);
+}
