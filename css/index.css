@@ -4,13 +4,16 @@
     margin: 0;
     padding: 0;
 }
+html, body {
+    height: 100%;
+}
 
-body {
+.invitation-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 750px;
-    width: auto;
+    flex-wrap: wrap;
+    height: 100%;
     border: 1px solid red;
 }
 .invitation {
@@ -18,12 +21,12 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 1px solid green;
 }
 .button {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 5px;
 }
 @media screen and (max-width: 768px) {
     .button {
